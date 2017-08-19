@@ -96,7 +96,7 @@ header .mobile {
 }
 
 @media only screen and (min-width: 761px) and (max-width: 2000px) {
-.main-container {
+#main-container {
   display: flex;
   top: 6rem; /* To offset for fixed header. */
   width: 100%;
@@ -160,83 +160,81 @@ header .mobile {
   color: white;
 }
 
-/*------------------------------------Feature Section*/
-#features-section {
-  width: 100%;
+/*------------------------------------Important Info*/
+#important-info {
   display: flex;
-  justify-content: space-between;
-  padding: 4rem 5%;
-  background-color: #f3f3f3;
-  /*border: 2px solid green;*/
-}
-
-.feature {
-  flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
-  background-color: white;
-}
-
-.feature h2 {
-  padding-bottom: .5rem;
-  font-size: 2.25rem;
-  font-weight: bold;
-  color: #4a4a4a;
-  opacity: 1;
-  font-family: "Roboto-Bold";
-}
-
-.feature h3 {
-  font-size: 1rem;
-  line-height: 1.2;
-  font-weight: 300;
-  color: #4a4a4a;
-  font-family: "Roboto-Light";
-  margin-bottom: 5rem;
-}
-
-.feature .image-container {
-  width: 90%;
-  height: 65%;
-  margin: 0 auto;
+  width: 100%;
+  height: 50rem;
+  flex-flow: column wrap;
   justify-content: center;
-  align-content: center;
-  overflow: hidden;
+  align-content: flex-start;
+  border: 2px solid green;
 }
 
-.image-container img {
-    display: block;
-    width: 90%;
-    height: 65%;
-    /*margin: 0.125rem 0.125rem 2.5rem 0.125rem;*/
-    margin: auto;
-  }
-
-.center .content {
-  margin-top: 2.5rem;
+#important-info .image-container {
+max-width: 60%;
+height: auto;
+overflow: hidden;
+margin: 2rem 1.5rem;
+border: 2px solid orange;
 }
 
-/*---------------------------------Filters Section*/
-#filters-section {
+#important-info .image-container img {
+display: block;
+max-width: 100%;
+height: auto;
+
+}
+#column .spacer {
+  max-width: 630px;
+  justify-content: space-between;
+  display: inline-flex;
+}
+
+
+
+/*---------------------------------Courses Section*/
+#course-container {
+  display: flex;
   width: 100%;
-  height: 32.5rem;
-  flex-direction: column;
-  padding: 4rem 0;
-  background-color: #4a4a4a;
-}
-
-#filters-section .content-center {
-  width: 100%;
-  height: auto;
-  color: white;
+  height: 70rem;
   text-align: center;
+  background-color: pink;
+  border: 2px solid purple;
 }
 
-#filters-section .content-center h2{
+#course-container  h1{
   opacity: 1;
   font-size: 2.25rem;
   font-weight: bold;
+  margin: 2rem;
 }
+
+#course-container .content {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: 2rem 4.5rem;
+  color: white;
+  flex-flow: row wrap;
+  border: 2px solid yellow;
+}
+
+/*#course-container .images-container {
+  display: flex;
+  /*flex-direction: row;*/
+  /*justify-content: center;
+  border: 2px solid green;*/
+}*/
+
+#course-container .image-container {
+  display: flex;
+  object-fit: contain;
+  height: auto;
+  border: 2px solid red;
+}
+
+
 
 #filters-section .content-center h3{
   font-size: 1rem;
@@ -268,7 +266,7 @@ header .mobile {
 }
 
 /*-------------------------------------Quote Section*/
-#quotes-section {
+/*#quotes-section {
   display: flex;
   background-color: #f3f3f3;
   width: 100%;
@@ -297,7 +295,7 @@ header .mobile {
 
 #quotes-section .quote-citation {
   height: 1.875rem;
-}
+}*/
 
 footer {
   max-width: 100%;
@@ -527,7 +525,7 @@ footer .copyright {
   }
 
   /*----------------------470-Filters Section*/
-  #filters-section {
+  /*#filters-section {
   height: 7.35rem;
   margin-bottom: 4rem;
   }
@@ -567,26 +565,6 @@ footer .copyright {
 
   #filters-section .extra {
     display: none;
-  }
-
-  #quotes-section .content-center {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    align-items: center;
-  }
-
-  #quotes-section .quote {
-    font-size: 1.5rem;
-    line-height: 1.4;
-    margin-right: 0;
-  }
-
-  #quotes-section .quote-citation {
-    height: 1.875rem;
-    margin: 1rem;
-  }
+  }*/
 
 }
