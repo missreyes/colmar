@@ -1,6 +1,6 @@
 /* Universal Styles */
 html {
-  font-family: "Palatino", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -167,15 +167,16 @@ header .mobile {
   }
 
   .start-here-text h1{
-    font-size: 3rem;
+    font-family: 'Italianno', cursive;
+    font-size: 4rem;
     font-weight: bold;
-    font-style: italic;
     text-shadow: 2px 2px 3px white;
     padding: 2rem;
   }
 
   .start-here-text p {
     font-size: 2rem;
+    line-height: 1.4;
     margin: 1.5rem 2rem;
   }
 
@@ -266,22 +267,23 @@ header .mobile {
   }
 
   .lrg-descrip-container {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
     margin: 1rem 1.5rem;
     /*border: 2px solid purple;*/
   }
 
   .lrg-descrip-container h1{
-    font-size: 2rem;
+    font-family: 'Italianno', cursive;
+    font-size: 3rem;
     font-weight: bold;
-    font-style: italic;
     text-shadow: 2px 2px 3px white;
     /*border: 2px solid purple;*/
   }
 
   .lrg-descrip-container p {
     font-size: 1.5rem;
+    line-height: 1.4;
     padding: 1.5rem 0 1.5rem 2rem;
   }
 
@@ -308,14 +310,14 @@ header .mobile {
 
   .features1-container img {
     display: block;
-    width: 35%;
-    height: 35%;
+    max-width: 35%;
+    height: auto;
     border: 1px solid hsl(240, 100%, 20%);
   }
 
   .features1-container .sm-descrip-container {
     display: flex;
-    width: 70%;
+    max-width: 60%;
     height: inherit;
     flex-flow: column wrap;
     justify-content: center;
@@ -324,9 +326,9 @@ header .mobile {
   }
 
   .features1-container .sm-descrip-container h2{
-    font-size: 2rem;
+    font-family: 'Italianno', cursive;
+    font-size: 3rem;
     font-weight: bold;
-    font-style: italic;
     text-shadow: 2px 2px 3px white;
     margin-left: 2rem;
     /*border: 2px solid purple;*/
@@ -334,6 +336,7 @@ header .mobile {
 
   .features1-container .sm-descrip-container p {
     font-size: 1.5rem;
+    line-height: 1.4;
     padding: 1.5rem 0 1.5rem 2rem;
   }
 
@@ -375,11 +378,11 @@ header .mobile {
   }
 
   #course-container  h1 {
+    font-family: 'Italianno', cursive;
     opacity: 1;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin: 2rem;
-    font-style: italic;
     text-shadow: 2px 2px 3px white;
   }
 
@@ -455,10 +458,10 @@ header .mobile {
 
   #thesis-info  h1 {
     opacity: 1;
-    font-size: 3rem;
+    font-family: 'Italianno', cursive;
+    font-size: 4rem;
     font-weight: bold;
     margin: 2rem 0 0 0;
-    font-style: italic;
     text-shadow: 2px 2px 3px white;
   }
 
@@ -487,14 +490,15 @@ header .mobile {
   }
 
   .vid-descrip-container h1{
-    font-size: 2rem;
+    font-family: 'Italianno', cursive;
+    font-size: 3rem;
     font-weight: bold;
-    font-style: italic;
     text-shadow: 2px 2px 3px white;
   }
 
   .vid-descrip-container p {
     font-size: 1.5rem;
+    line-height: 1.4;
     padding: 1.5rem 0 1.5rem 2rem;
   }
 
@@ -537,9 +541,9 @@ header .mobile {
   }
 
   .sm-description-container h2{
-    font-size: 2rem;
+    font-family: 'Italianno', cursive;
+    font-size: 3rem;
     font-weight: bold;
-    font-style: italic;
     text-shadow: 2px 2px 3px white;
     margin-left: 2rem;
     /*border: 2px solid purple;*/
@@ -547,6 +551,7 @@ header .mobile {
 
   .sm-description-container p {
     font-size: 1.5rem;
+    line-height: 1.4;
     padding: 1.5rem 0 1.5rem 2rem;
   }
 
