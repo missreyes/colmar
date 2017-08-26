@@ -15,7 +15,7 @@ header {
   position: fixed;
   width: 100%;
   height: 4rem;
-  border-bottom:  1px solid  hsl(240, 100%, 20%);
+  border-bottom: 1px solid  hsl(240, 100%, 20%);
   background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
   z-index: 50;
   align-items: center;
@@ -110,7 +110,7 @@ header .mobile {
 }
 
 
-@media only screen and (min-width: 471px) and (max-width: 2000px) {
+@media only screen and (min-width: 47.5rem) and (max-width: 125rem) {
   #main-container {
     display: flex;
     width: 100%;
@@ -293,9 +293,13 @@ header .mobile {
     height: auto;
     margin: 2rem 2rem 2rem 0;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     box-shadow: 10px 10px 10px grey;
     border: 1px solid hsl(30, 50%, 75%);   /*Sandy color*/
+  }
+
+  .features1-container .last-item {
+    background-color: white;
   }
 
   .features1-container .sm-img-container {
@@ -318,10 +322,9 @@ header .mobile {
   .features1-container .sm-descrip-container {
     display: flex;
     max-width: 60%;
-    height: inherit;
+    height: auto;
     flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
+    padding-top: 2rem;
     /*border: 2px solid purple;*/
   }
 
@@ -410,6 +413,10 @@ header .mobile {
     /*border: 2px solid red;*/
   }
 
+  #course-container .image-container:hover {
+    border: 3px solid hsl(30, 50%, 75%);   /*Sandy color*/
+  }
+
   #course-container .image-container img{
     border-bottom:  1px solid  hsl(240, 100%, 20%);
     /*border: 2px solid red;*/
@@ -482,7 +489,7 @@ header .mobile {
   }
 
   .vid-descrip-container {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
     margin: 2rem 1.5rem;
     text-align: left;
@@ -510,6 +517,10 @@ header .mobile {
     justify-content: flex-start;
     box-shadow: 10px 10px 10px grey;
     border: 1px solid hsl(30, 50%, 75%);   /*Sandy color*/
+  }
+
+  .features-container .first-item {
+    background-color: white;
   }
 
   .sm-image-container {
@@ -582,9 +593,9 @@ header .mobile {
 
 
 /*-----------------------------------------------------*/
-/*Display Values for Mobile*/
-/*@media only screen and (min-width: 471px) and (max-width: 760px) {*/
-@media only screen and (max-width: 470px) {
+/*Display Values for Tablet & Mobile*/
+@media only screen and (min-width: 20rem) and (max-width: 47.5rem) {
+/*@media only screen and (max-width: 470px) {*/
   .main-container {
     top: 2.5625rem;
   }
@@ -604,10 +615,40 @@ header .mobile {
 
   header .mobile ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
   }
+
+
+.home:hover {
+  border-radius: 5px;
+  /*padding: .5rem;*/
+  background-color: hsl(30, 50%, 85%);   /*Sandy color*/
+  transition: color 2s ease-in;
+}
+
+.campus:hover {
+  border-radius: 5px;
+  /*padding: .5rem;*/
+  background-color: hsl(30, 50%, 85%);   /*Sandy color*/
+  transition: color 2s ease-in;
+}
+
+.online:hover {
+  border-radius: 5px;
+  /*padding: .5rem;*/
+  background-color: hsl(30, 50%, 85%);   /*Sandy color*/
+  transition: color 2s ease-in;
+}
+
+.login:hover {
+  border-radius: 5px;
+  /*padding: .5rem;*/
+  background-color: hsl(30, 50%, 85%);   /*Sandy color*/
+  transition: color 2s ease-in;
+}
+
 
   /*----------------------------------470 Banner & Start Section*/
   .start-here-container {
@@ -662,25 +703,30 @@ header .mobile {
   }
 
   /*----------------------------------470 Features1 Section*/
+  #important-info {
+  flex-direction: column;
+  align-content: center;
+  /*border: 3px solid black;*/
+}
+
   #important-info .lrg-img-container {
     display: none;
   }
 
   .features1-container {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
     border-top:  1px solid  hsl(240, 100%, 20%);
+    /*border: 2px solid green;*/
   }
 
   .features1-container .sm-img-container {
-    width: 100%;
     border-bottom:  1px solid  hsl(240, 100%, 20%);
+    /*border: 2px solid blue;*/
   }
 
-  .features1-container img {
-    max-width: 100%;
+  .features1-container  img {
+    width: 100%;
     margin-top: 2rem;
-    /*height: auto;
     border: 1px solid hsl(240, 100%, 20%);*/
   }
 
@@ -751,6 +797,12 @@ header .mobile {
     line-height: 1.4;
     border-radius: 4px;
   }
+
+  #course-container  .description-container:hover {
+    background-color: hsl(245, 100%, 20%); /*Dark Blue Font*/
+    color: hsl(160, 30%, 70%); /*Seagreen Color*/
+  }
+
 
   #course-container h2 {
     font-size: 1.5rem;
