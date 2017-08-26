@@ -581,11 +581,10 @@ header .mobile {
 }
 
 
-
 /*-----------------------------------------------------*/
-/*Display Values for Tablet*/
+/*Display Values for Mobile*/
 /*@media only screen and (min-width: 471px) and (max-width: 760px) {*/
-  @media only screen and (max-width: 470px) {
+@media only screen and (max-width: 470px) {
   .main-container {
     top: 2.5625rem;
   }
@@ -603,13 +602,14 @@ header .mobile {
     width: 100%;
   }
 
- header .mobile ul {
+  header .mobile ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
 
+  /*----------------------------------470 Banner & Start Section*/
   .start-here-container {
     flex-direction: row;
     justify-content: center;
@@ -661,174 +661,154 @@ header .mobile {
     text-shadow: 1px 1px 2px white;
   }
 
-#important-info .lrg-img-container {
-  display: none;
-}
-
-.features1-container {
-  width: 100%;
-  height: auto;
-  border-top:  1px solid  hsl(240, 100%, 20%);
-}
-
-.features1-container .sm-img-container {
-  width: 100%;
-  border-bottom:  1px solid  hsl(240, 100%, 20%);
-}
-
-.features1-container img {
-  max-width: 100%;
-  margin-top: 2rem;
-  /*height: auto;
-  border: 1px solid hsl(240, 100%, 20%);*/
-}
-
-.features1-container .sm-descrip-container {
-  max-width: 100%;
-  height: auto;
-  margin: 2rem 0;
-  text-align: center;
-  /*border: 2px solid purple;*/
-}
-
-.features1-container .sm-descrip-container h2{
-  font-family: 'Italianno', cursive;
-  font-size: 2rem;
-  margin: 1rem;
-  /*border: 2px solid purple;*/
-}
-
-.features1-container .sm-descrip-container p {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-bottom: 2rem;
-  /*padding: 1.5rem 0 1.5rem 2rem;*/
-}
-
-.features1-container .sm-descrip-container a {
-  font-size: 1rem;
-  padding: .5rem  1rem;
-  margin-bottom: 2rem;
-  color: hsl(160, 30%, 70%); /*Seagreen Color*/
-  background-color: hsl(245, 100%, 20%); /*Dark Blue Font*/
-  border-radius: 4px;
-  border: 1px solid hsl(245, 100%, 10%);
-  box-shadow: 5px 5px 5px grey;
-  text-shadow: 0px 0px 0px white;
-}
-
-.features1-container .sm-descrip-container a:hover {
-  color: hsl(245, 100%, 20%); /*Dark Blue Font*/
-  background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
-}
-
-#course-container {
-  width: 100%;
-  flex-direction: column;
-  /*border: 2px solid purple;*/
-}
-
-#course-container  h1 {
-  font-family: 'Italianno', cursive;
-  font-size: 3rem;
-  text-align: center;
-  margin: 1rem;
-  /*text-shadow: 2px 2px 3px white;*/
-}
-
-/*Photo-grid-item*/
-#course-container .image-container img {
-  display: none;
-}
-
-#course-container  .description-container {
-  background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
-  color: #000;
-  margin: .5rem;
-  text-align: center;
-  line-height: 1.4;
-}
-
-#course-container h2 {
-  font-size: 1.5rem;
-}
-
-#course-container p {
-  display: none;
-}
-
-  #features-section {
-    flex-flow: row wrap;
-    padding: 0;
+  /*----------------------------------470 Features1 Section*/
+  #important-info .lrg-img-container {
+    display: none;
   }
 
-  #features-section .feature {
-    margin: 0;
-  }
-
-  #features-section .center {
-    display: flex;
-    width: auto;
-    height: auto;
-    margin: 0;
-    justify-content: center;
-    align-content: center;
-    flex-flow: column wrap;
-  }
-
-  #features-section .image-container {
-    width: auto;
-    height: auto;
-    overflow: hidden;
-  }
-
-  #features-section  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0;
-  }
-
-  .feature h2 {
-    text-align: left;
-    padding-right: 1.25rem;
-  }
-
-  .feature h3 {
-    text-align: left;
-    padding-right: 1.25rem;
-  }
-
-  /*----------------------760-Filters Section*/
-  #filters-section {
-    height: 14.75rem;
-  }
-
-  #filters-section .images-container {
+  .features1-container {
     width: 100%;
-    height: 70%;
-    padding: 0;
-    /*border: 2px solid blue;*/
+    height: auto;
+    border-top:  1px solid  hsl(240, 100%, 20%);
   }
 
-  #filters-section .image-container {
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    padding: 0;
-    /*border: 2px solid red;*/
+  .features1-container .sm-img-container {
+    width: 100%;
+    border-bottom:  1px solid  hsl(240, 100%, 20%);
   }
 
-  #filters-section img{
+  .features1-container img {
+    max-width: 100%;
+    margin-top: 2rem;
+    /*height: auto;
+    border: 1px solid hsl(240, 100%, 20%);*/
+  }
+
+  .features1-container .sm-descrip-container {
     max-width: 100%;
     height: auto;
-    display: block;
+    margin: 2rem 0;
+    text-align: center;
+    /*border: 2px solid purple;*/
   }
 
-  #quotes-section .content-center {
+  .features1-container .sm-descrip-container h2{
+    font-family: 'Italianno', cursive;
+    font-size: 2rem;
+    margin: 1rem;
+    /*border: 2px solid purple;*/
+  }
+
+  .features1-container .sm-descrip-container p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    /*padding: 1.5rem 0 1.5rem 2rem;*/
+  }
+
+  .features1-container .sm-descrip-container a {
+    font-size: 1rem;
+    padding: .5rem  1rem;
+    margin-bottom: 2rem;
+    color: hsl(160, 30%, 70%); /*Seagreen Color*/
+    background-color: hsl(245, 100%, 20%); /*Dark Blue Font*/
+    border-radius: 4px;
+    border: 1px solid hsl(245, 100%, 10%);
+    box-shadow: 5px 5px 5px grey;
+    text-shadow: 0px 0px 0px white;
+  }
+
+  .features1-container .sm-descrip-container a:hover {
+    color: hsl(245, 100%, 20%); /*Dark Blue Font*/
+    background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
+  }
+
+  /*----------------------------------470 Course Section*/
+  #course-container {
+    width: 100%;
+    flex-direction: column;
+    /*border: 2px solid purple;*/
+  }
+
+  #course-container  h1 {
+    font-family: 'Italianno', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem;
+    /*text-shadow: 2px 2px 3px white;*/
+  }
+
+  #course-container .image-container img {
+    display: none;
+  }
+
+  #course-container  .description-container {
+    background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
+    color: #000;
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+    line-height: 1.4;
+    border-radius: 4px;
+  }
+
+  #course-container h2 {
+    font-size: 1.5rem;
+  }
+
+  #course-container p {
+    display: none;
+  }
+
+  /*----------------------------------470 Thesis Section*/
+  #thesis-info {
+    flex-direction: column;
+    margin: 2rem 0 2.5rem 0;
+    border-top: 1px solid hsl(245, 100%, 10%);
+  }
+
+  #thesis-info  h1 {
+    font-family: 'Italianno', cursive;
+    font-size: 3rem;
+    margin: 2rem 0 0 0;
+    text-align: center;
+  }
+
+  .vid-container {
+    max-width: 100%;
     height: auto;
-    padding: 0 1rem 0 1rem;
-    align-items: center;
+    overflow: hidden;
+    margin: 2rem 0 2.5rem 0;
+  }
+
+  .vidport {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+  }
+
+  .vid-descrip-container {
+    display: none;
+  }
+
+  .features-container {
+    display: none;
+  }
+
+  footer {
+    background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
+    padding: 1rem;
+    border-top: 1px solid  hsl(240, 100%, 20%);
+  }
+
+  footer .copyright {
+    flex-grow: 1;
+  }
+
+  .terms,
+  .privacy {
+    display: none;
   }
 
 }
