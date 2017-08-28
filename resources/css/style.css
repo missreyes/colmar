@@ -4,6 +4,7 @@ html {
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
+  -webkit-font-kerning: auto;
   font-kerning: auto;
   width: 100%;
   background-color: hsl(30, 50%, 85%); /*Sandy background*/
@@ -11,57 +12,93 @@ html {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   width: 100%;
+  height: 64px;
   height: 4rem;
   border-bottom: 1px solid hsl(240, 100%, 20%);
   background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
   z-index: 50;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
   /*border: 2px solid red;*/
 }
 
 header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 64px;
   height: 4rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   /*border: 2px solid green;*/
 }
 
 /*Contains both title words & logo*/
 .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: auto;
+  height: 56px;
   height: 3.5rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  margin-left: 24px;
   margin-left: 1.5rem;
   /*border: 2px solid red;*/
 }
 
 /*Centers the logo with the title*/
 header .logo {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   /*border: 2px solid green;*/
 }
 
 .logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  height: 32px;
   height: 2rem;
   /*border: 2px solid green;*/
 }
 
 .colmar {
   color: hsl(240, 100%, 20%); /*Dark Blue Font*/
+  font-size: 32px;
   font-size: 2rem;
   font-style: normal;
   text-shadow: 2px 2px 4px white;
@@ -69,30 +106,40 @@ header .logo {
 
 .academy {
   color: hsla(240, 100%, 20%, 0.5); /*Light Blue Font*/
+  font-size: 32px;
   font-size: 2rem;
   font-style: normal;
   text-shadow: 2px 2px 4px white;
 }
 
 header .desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: auto;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  margin-right: 24px;
   margin-right: 1.5rem;
   /*border: 2px solid blue;*/
 }
 
 header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 nav li {
+  padding-left: 16px;
   padding-left: 1rem;
 }
 
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
+  font-size: 16px;
   font-size: 1rem;
   color: white;
   font-style: italic;
@@ -101,7 +148,9 @@ nav a {
 }
 
 header .icon {
+  width: 16px;
   width: 1rem;
+  padding-left: 12px;
   padding-left: .75rem;
 }
 
@@ -112,30 +161,48 @@ header .mobile {
 /*Media screens between 761px & 2000px*/
 @media only screen and (min-width: 761px) and (max-width: 2000px) {
   #main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -ms-flex-flow: column;
     flex-flow: column;
     /*border: 3px solid blue;*/
   }
 
   /*----------------------Banner & Sign-up Section*/
   .start-here-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: start;
     align-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    margin-top: 64px;
     margin-top: 4rem;
     /*border: 2px solid yellow;*/
   }
 
   .start-here-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     /*border: 2px solid black;*/
   }
@@ -144,6 +211,7 @@ header .mobile {
     max-width: 60%;
     height: auto;
     overflow: hidden;
+    margin: 32px 24px;
     margin: 2rem 1.5rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     /*border: 2px solid orange;*/
@@ -156,12 +224,21 @@ header .mobile {
   }
 
   .start-here-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 40%;
+    max-height: 800px;
     max-height: 50rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    margin-right: 24px;
     margin-right: 1.5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     border: 1px solid hsl(30, 50%, 75%); /*Sandy color*/
@@ -169,32 +246,41 @@ header .mobile {
 
   .start-here-text h1{
     font-family: 'Italianno', cursive;
+    font-size: 64px;
     font-size: 4rem;
     font-weight: bold;
     text-shadow: 2px 2px 1px white;
+    padding: 32px;
     padding: 2rem;
   }
 
   .start-here-text p {
+    font-size: 32px;
     font-size: 2rem;
     line-height: 1.4;
+    margin: 24px 48px;
     margin: 1.5rem 3rem;
   }
 
   .start-here-btn {
+    margin-top: 26px;
     margin-top: 1.625rem;
     width: 0 auto;
+    padding: 8px 80px;
     padding: 0.5rem 5rem;
     border-radius: 4px;
+    margin-bottom: 32px;
     margin-bottom: 2rem;
     background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     border: 1px solid hsl(160, 30%, 50%);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   }
 
   .start-here-btn a {
     color: hsl(240, 100%, 20%);
+    font-size: 24px;
     font-size: 1.5rem;
     font-weight: bold;
     font-style: italic;
@@ -202,13 +288,17 @@ header .mobile {
   }
 
   .start-here-btn {
+    margin-top: 26px;
     margin-top: 1.625rem;
     width: 0 auto;
+    padding: 8px 80px;
     padding: 0.5rem 5rem;
     border-radius: 4px;
+    margin-bottom: 32px;
     margin-bottom: 2rem;
     background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     border: 1px solid hsl(160, 30%, 50%); /*Seagreen Border*/
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   }
@@ -219,6 +309,7 @@ header .mobile {
   }
 
   a {
+    font-size: 24px;
     font-size: 1.5rem;
     font-weight: bold;
     font-style: italic;
@@ -232,20 +323,31 @@ header .mobile {
 
   /*------------------------------------Important Info Section*/
   #important-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: start;
     align-content: flex-start;
     /*border: 1px solid black;*/
   }
 
   .info-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -ms-flex-line-pack: start;
     align-content: flex-start;
     /*border: 2px solid black;*/
   }
@@ -255,6 +357,7 @@ header .mobile {
     width: 60%;
     height: auto;
     overflow: hidden;
+    margin: 32px 24px;
     margin: 2rem 1.5rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     /*border: 2px solid yellow;*/
@@ -269,12 +372,14 @@ header .mobile {
   .lrg-descrip-container {
     max-width: 100%;
     height: auto;
+    margin: 16px 24px;
     margin: 1rem 1.5rem;
     /*border: 2px solid purple;*/
   }
 
   .lrg-descrip-container h1{
     font-family: 'Italianno', cursive;
+    font-size: 48px;
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 2px 2px 1px white;
@@ -282,8 +387,10 @@ header .mobile {
   }
 
   .lrg-descrip-container p {
+    font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.4;
+    padding: 24px 0 24px 32px;
     padding: 1.5rem 0 1.5rem 2rem;
   }
 
@@ -292,11 +399,19 @@ header .mobile {
   }
 
   #features1-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 40%;
     height: auto;
+    margin: 32px 32px 32px 0;
     margin: 2rem 2rem 2rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     border: 1px solid hsl(30, 50%, 75%); /*Sandy color*/
@@ -307,10 +422,13 @@ header .mobile {
   }
 
   #features1-container .sm-img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
     height: auto;
     overflow: hidden;
+    margin: 16px;
     margin: 1rem;
     border-bottom: 1px solid hsl(240, 100%, 20%);
     /*border: 2px solid orange;*/
@@ -324,39 +442,52 @@ header .mobile {
   }
 
   #features1-container .sm-descrip-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
+    padding-top: 32px;
     padding-top: 2rem;
     /*border: 2px solid purple;*/
   }
 
   #features1-container .sm-descrip-container h2{
     font-family: 'Italianno', cursive;
+    font-size: 48px;
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 2px 2px 1px white;
+    margin-left: 32px;
     margin-left: 2rem;
     /*border: 2px solid purple;*/
   }
 
   #features1-container .sm-descrip-container p {
+    font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.4;
+    padding: 24px 0 24px 32px;
     padding: 1.5rem 0 1.5rem 2rem;
   }
 
   #features1-container .sm-descrip-container a {
+    font-size: 24px;
     font-size: 1.5rem;
     font-weight: normal;
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     font-style: italic;
+    padding: 8px 16px;
     padding: .5rem 1rem;
+    margin: 32px 16px;
     margin: 2rem 1rem;
     color: hsl(160, 30%, 70%); /*Seagreen Color*/
     background-color: hsl(240, 100%, 20%); /*Dark Blue Font*/
     text-align: right;
+    -ms-flex-item-align: end;
     align-self: flex-end;
     border-radius: 4px;
     border: 1px solid hsl(240, 100%, 10%);
@@ -372,13 +503,19 @@ header .mobile {
   /*---------------------------------Courses Section*/
   /*Photo-grid-container is PERFECT DON'T TOUCH*/
   #course-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: hsl(160, 30%, 70%); /*Seagreen color*/
     width: 100%;
     height: auto;
     text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: start;
     align-content: flex-start;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     /*border: 2px solid purple;*/
   }
@@ -386,33 +523,47 @@ header .mobile {
   #course-container h1 {
     font-family: 'Italianno', cursive;
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    font-size: 64px;
     font-size: 4rem;
     font-weight: bold;
+    margin: 32px;
     margin: 2rem;
     text-shadow: 2px 2px 1px white;
   }
 
   /*Photo-grid*/
   #course-container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
+    margin: 0 72px;
     margin: 0 4.5rem;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     /*border: 2px solid yellow;*/
   }
 
   /*Photo-grid-item*/
   #course-container .images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 30%;
+    height: 404px;
     height: 25.25rem;
+    -ms-flex-flow: column;
     flex-flow: column;
+    margin-bottom: 32px;
     margin-bottom: 2rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-
     border: 1px solid hsl(240, 100%, 20%);
     background-color: hsla(240,100%, 20%, 0.5);
     /*border: 2px solid red;*/
@@ -420,6 +571,7 @@ header .mobile {
 
   #course-container .images-container:hover {
     background-color: hsl(30, 50%, 75%); /*Sandy color*/
+    -webkit-transition: background-color 1s ease-in;
     transition: background-color 1s ease-in;
     cursor: pointer;
     /*border: 3px solid hsl(30, 50%, 75%); /*Sandy color*/
@@ -432,49 +584,68 @@ header .mobile {
 
   #course-container .descriptions-container {
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    font-size: 16px;
     font-size: 1rem;
     font-weight: bold;
     color: hsl(240, 100%, 20%);
+    margin: 8px;
     margin: .5rem;
     text-align: center;
     line-height: 1.4;
   }
 
   #course-container .descriptions-container h2 {
+    font-size: 32px;
     font-size: 2rem;
   }
 
   #course-container .descriptions-container p {
     font-style: italic;
+    margin: 8px;
     margin: .5rem;
   }
 
   /*------------------------------------Thesis Info Section*/
   #thesis-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
     text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     /*border: 2px solid black;*/
   }
 
   .thesis-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: start;
     align-content: flex-start;
     /*border: 2px solid black;*/
   }
 
   #thesis-info h1 {
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     font-family: 'Italianno', cursive;
+    font-size: 64px;
     font-size: 4rem;
     font-weight: bold;
+    margin: 32px 0 0 0;
     margin: 2rem 0 0 0;
     text-shadow: 2px 2px 1px white;
   }
@@ -484,6 +655,7 @@ header .mobile {
     max-width: 60%;
     height: auto;
     overflow: hidden;
+    margin: 32px 24px;
     margin: 2rem 1.5rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     /*border: 2px solid yellow;*/
@@ -499,36 +671,49 @@ header .mobile {
   .vid-descrip-container {
     max-width: 100%;
     height: auto;
+    margin: 32px 24px;
     margin: 2rem 1.5rem;
     text-align: left;
   }
 
   .vid-descrip-container h1{
     font-family: 'Italianno', cursive;
+    font-size: 48px;
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 2px 2px 1px white;
   }
 
   .vid-descrip-container p {
+    font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.4;
+    padding: 24px 0 24px 32px;
     padding: 1.5rem 0 1.5rem 2rem;
   }
 
   #thesis-info .features-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 35%;
     height: auto;
+    margin: 32px 32px 32px 0;
     margin: 2rem 2rem 2rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-    border: 1px solid hsl(30, 50%, 75%); /*Sandy color*/*/
+    border: 1px solid hsl(30, 50%, 75%); /*Sandy color*/
   }
 
   #thesis-info .features-container .sm-image-container:hover {
     background-color: hsl(160, 30%, 70%); /*Seagreen color*/
+    -webkit-transition: background-color 1s ease-in;
     transition: background-color 1s ease-in;
     cursor: pointer;
   }
@@ -538,9 +723,12 @@ header .mobile {
   }
 
   #thesis-info .sm-image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
     height: auto;
+    margin: 16px;
     margin: 1rem;
     /*border: 2px solid orange;*/
   }
@@ -554,26 +742,35 @@ header .mobile {
   }
 
   #thesis-info .sm-description-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 65%;
     height: auto;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     text-align: left;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-bottom: 1px solid hsl(240, 100%, 20%);
   }
 
   #thesis-info .sm-description-container h2{
     font-family: 'Italianno', cursive;
+    font-size: 48px;
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 2px 2px 1px white;
+    margin-left: 32px;
     margin-left: 2rem;
-    }
+  }
 
   #thesis-info .sm-description-container p {
+    font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.4;
+    padding: 24px 0 24px 32px;
     padding: 1.5rem 0 1.5rem 2rem;
   }
 
@@ -581,6 +778,7 @@ header .mobile {
   footer {
     max-width: 100%;
     background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
+    padding: 24px 32px;
     padding: 1.5rem 2rem;
     border-top: 1px solid hsl(240, 100%, 20%);
   }
@@ -588,28 +786,37 @@ header .mobile {
   footer .content {
     color: white;
     font-style: italic;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    font-size: 16px;
     font-size: 1rem;
     margin-right: auto;
   }
 
   footer .copyright {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
   }
 
   .terms a {
+    margin-right: 16px;
     margin-right: 1rem;
     color: white;
     font-style: italic;
+    font-size: 16px;
     font-size: 1rem;
     font-weight: normal;
     text-shadow: 0 0 0 white;
   }
 
   .privacy a {
+    margin-right: 16px;
     margin-right: 1rem;
     color: white;
     font-style: italic;
+    font-size: 16px;
     font-size: 1rem;
     font-weight: normal;
     text-shadow: 0 0 0 white;
@@ -639,8 +846,13 @@ header .mobile {
   }
 
   header .mobile ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
   }
@@ -648,37 +860,50 @@ header .mobile {
   .home:hover {
     border-radius: 5px;
     background-color: hsl(30, 50%, 85%); /*Sandy color*/
+    -webkit-transition: color 2s ease-in;
     transition: color 2s ease-in;
   }
 
   .campus:hover {
     border-radius: 5px;
     background-color: hsl(30, 50%, 85%); /*Sandy color*/
+    -webkit-transition: color 2s ease-in;
     transition: color 2s ease-in;
   }
 
   .online:hover {
     border-radius: 5px;
     background-color: hsl(30, 50%, 85%); /*Sandy color*/
+    -webkit-transition: color 2s ease-in;
     transition: color 2s ease-in;
   }
 
   .login:hover {
     border-radius: 5px;
     background-color: hsl(30, 50%, 85%); /*Sandy color*/
+    -webkit-transition: color 2s ease-in;
     transition: color 2s ease-in;
   }
 
   /*----------------------------------470 Banner & Start Section*/
   .start-here-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
     align-items: center;
     /*border: 2px solid yellow;*/
   }
 
   .banner img {
     width: 100%;
+    margin-top: 80px;
     margin-top: 5rem;
   }
 
@@ -686,22 +911,28 @@ header .mobile {
     max-width: 100%;
     height: auto;
     text-align: center;
+    margin: 32px 0;
     margin: 2rem 0;
   }
 
   .start-here-text h1 {
     font-family: 'Italianno', cursive;
+    font-size: 48px;
     font-size: 3rem;
   }
 
   .start-here-text p {
+    font-size: 16px;
     font-size: 1rem;
     line-height: 1.4;
+    margin: 16px 0;
     margin: 1rem 0;
   }
 
   .start-here-btn {
+    margin-top: 32px;
     margin-top: 2rem;
+    padding: 8px 80px;
     padding: 0.5rem 5rem;
     border-radius: 4px;
     background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
@@ -715,6 +946,7 @@ header .mobile {
   }
 
   a {
+    font-size: 16px;
     font-size: 1rem;
     font-weight: bold;
     font-style: italic;
@@ -723,7 +955,11 @@ header .mobile {
 
   /*----------------------------------470 Mobile (Features1) Section*/
   #important-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-line-pack: center;
     align-content: center;
     /*border: 3px solid black;*/
   }
@@ -737,10 +973,17 @@ header .mobile {
   }
 
   #mobile-features {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
     height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border: 1px solid hsl(30, 50%, 75%); /*Sandy color*/
   }
@@ -750,13 +993,22 @@ header .mobile {
   }
 
   #mobile-features .sm-img-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
     height: auto;
+    margin: 16px;
     margin: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     border-bottom: 1px solid hsl(240, 100%, 20%);
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -ms-flex-line-pack: start;
     align-content: flex-start;
     /*border: 2px solid red;*/
   }
@@ -771,9 +1023,12 @@ header .mobile {
   }
 
   #mobile-features .sm-descrip-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
     height: auto;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     text-align: center;
     /*border: 2px solid purple;*/
@@ -781,31 +1036,40 @@ header .mobile {
 
   #mobile-features .sm-descrip-mobile h2{
     font-family: 'Italianno', cursive;
+    font-size: 48px;
     font-size: 3rem;
+    margin: 16px;
     margin: 1rem;
     /*border: 2px solid purple;*/
   }
 
   #mobile-features .sm-descrip-mobile p {
+    font-size: 16px;
     font-size: 1rem;
     line-height: 1.4;
+    margin-bottom: 32px;
     margin-bottom: 2rem;
   }
 
   #mobile-features .sm-descrip-mobile a {
+    font-size: 16px;
     font-size: 1rem;
     font-weight: normal;
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     font-style: italic;
     color: hsl(160, 30%, 70%); /*Seagreen Color*/
     background-color: hsl(240, 100%, 20%); /*Dark Blue Font*/
     text-align: right;
+    -ms-flex-item-align: center;
     align-self: center;
     border-radius: 4px;
     border: 1px solid hsl(240, 100%, 10%);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     text-shadow: 0 0 0 white;
+    padding: 8px 16px;
     padding: .5rem 1rem;
+    margin-bottom: 32px;
     margin-bottom: 2rem;
   }
 
@@ -817,14 +1081,19 @@ header .mobile {
   /*----------------------------------470 Course Section*/
   #course-container {
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     /*border: 2px solid purple;*/
   }
 
   #course-container h1 {
     font-family: 'Italianno', cursive;
+    font-size: 48px;
     font-size: 3rem;
     text-align: center;
+    margin: 16px;
     margin: 1rem;
     /*text-shadow: 2px 2px 3px white;*/
   }
@@ -836,7 +1105,9 @@ header .mobile {
   #course-container .descriptions-container {
     background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
     color: hsl(240, 100%, 20%); /*Dark Blue Font*/
+    margin: 8px;
     margin: .5rem;
+    padding: 8px;
     padding: .5rem;
     text-align: center;
     line-height: 1.4;
@@ -846,11 +1117,13 @@ header .mobile {
   #course-container .descriptions-container:hover {
     background-color: hsl(240, 100%, 20%); /*Dark Blue Font*/
     color: hsl(160, 30%, 70%); /*Seagreen Color*/
+    -webkit-transition: background-color 1s ease-in;
     transition: background-color 1s ease-in;
     cursor: pointer;
   }
 
   #course-container .descriptions-container h2 {
+    font-size: 24px;
     font-size: 1.5rem;
   }
 
@@ -860,14 +1133,20 @@ header .mobile {
 
   /*----------------------------------470 Thesis Section*/
   #thesis-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    margin: 32px 0 40px 0;
     margin: 2rem 0 2.5rem 0;
     border-top: 1px solid hsl(240, 100%, 10%);
   }
 
   #thesis-info h1 {
     font-family: 'Italianno', cursive;
+    font-size: 48px;
     font-size: 3rem;
+    margin: 32px 0 0 0;
     margin: 2rem 0 0 0;
     text-align: center;
   }
@@ -876,6 +1155,7 @@ header .mobile {
     max-width: 100%;
     height: auto;
     overflow: hidden;
+    margin: 32px 0 40px 0;
     margin: 2rem 0 2.5rem 0;
   }
 
@@ -897,11 +1177,14 @@ header .mobile {
   /*----------------------------------470 Thesis Section*/
   footer {
     background-color: hsl(160, 30%, 70%); /*Seagreen Color*/
+    padding: 16px;
     padding: 1rem;
     border-top: 1px solid hsl(240, 100%, 20%);
   }
 
   footer .copyright {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     color: white;
     font-style: italic;
