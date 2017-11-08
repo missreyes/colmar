@@ -449,8 +449,10 @@ header .mobile {
     height: auto;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
-    padding-top: 32px;
-    padding-top: 2rem;
+    padding: 32px 16px;
+    padding: 2rem 1rem;
+    /*padding-top: 32px;
+    padding-top: 2rem;*/
     /*border: 2px solid purple;*/
   }
 
